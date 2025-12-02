@@ -52,11 +52,14 @@ body = {
   ],
   "category_assignments": [
     "string"
+  ],
+  "client_type": [
+    "string"
   ]
 }
-# keyword: None (disabled)
+# keyword:  (disabled)
 # clientStatus: TOTAL (disabled)
-# sortField: None (disabled)
+# sortField:  (disabled)
 # sortOrder: ASC (disabled)
 # connectionStatus: CONNECTED (disabled)
 

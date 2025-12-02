@@ -1,63 +1,54 @@
 import requests
          
 baseUrl = 'https://api.extremecloudiq.com'
-site_id = 'Site ID'
 access_token = '***'
 
-url = f"{baseUrl}/devices/rm-devices-page"
+url = f"{baseUrl}/afc/export"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {'page': '1', 'limit': '10'}
 body = {
   "site_ids": [
-    site_id
+    4243,
+    2930
   ],
   "sns": [
+    "string",
     "string"
   ],
   "mac_addresses": [
+    "string",
     "string"
   ],
   "hostnames": [
+    "string",
     "string"
   ],
-  "default_gateway_ips": [
+  "power_mode": [
+    "string",
     "string"
   ],
   "product_types": [
+    "string",
     "string"
   ],
-  "firmware_versions": [
+  "wifi_radio": [
+    "string",
     "string"
   ],
-  "country_codes": [
-    0
-  ],
-  "managed_by": [
+  "geo_location": [
+    "string",
     "string"
   ],
-  "network_policies": [
+  "afc_status": [
+    "string",
     "string"
-  ],
-  "eth_uplink_speed_filters": [
-    {
-      "eth_uplink_speed": "ETH0",
-      "filter_type": "GT",
-      "constant_value": "VAUTO",
-      "data_unit": "KBPS"
-    }
   ]
 }
-# keyword: None (disabled)
-# connected: true (disabled)
-# adminStates: NEW (disabled)
-# deviceCategory: WIRELESS (disabled)
+# keyword: string (disabled)
 # sortField: HOSTNAME (disabled)
 # order: ASC (disabled)
-# deviceTypes: REAL (disabled)
-# configMismatch: True (disabled)
-# async: false (disabled)
+# timezoneOffset: 19 (disabled)
 # includeUnassigned: false (disabled)
-# stacked_view: true (disabled)
 
 response = requests.post(url, headers=headers, params=params)
 

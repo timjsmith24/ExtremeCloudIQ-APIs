@@ -22,10 +22,17 @@ body = {
   "backup_vlan": 4094,
   "primary_tagged": True,
   "backup_tagged": True,
-  "tunnel_address": "string",
+  "tunnel_address": "68.0.246.255/20",
   "router_id": 0,
   "gateway": "string",
-  "native_vlan": 4094
+  "native_vlan": 4094,
+  "block_non_essential_broadcast": True,
+  "arp_proxy": True,
+  "multicast_rules": [
+    {
+      "ip": "string"
+    }
+  ]
 }
 
 

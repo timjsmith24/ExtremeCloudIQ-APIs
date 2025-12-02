@@ -1,9 +1,10 @@
 import requests
          
+id_ = 'string'
 baseUrl = 'https://api.extremecloudiq.com'
 access_token = '***'
 
-url = f"{baseUrl}/ng-reports/download/reports/:id"
+url = f"{baseUrl}/ng-reports/download/reports/{id_}"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 

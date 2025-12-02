@@ -1,10 +1,10 @@
 import requests
          
 baseUrl = 'https://api.extremecloudiq.com'
-client_mac = 'Client MAC address'
+sn = 'Serial Number'
 access_token = '***'
 
-url = f"{baseUrl}/monitoring/topology/client-trail/{client_mac}"
+url = f"{baseUrl}/airrm/device/{sn}"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 

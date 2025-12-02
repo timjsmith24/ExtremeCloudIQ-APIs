@@ -17,7 +17,8 @@ body = {
   "enable_client_transmission_power": True,
   "client_transmission_power": 20,
   "radio_mode": "B_G",
-  "enable_ofdma": True
+  "enable_ofdma": True,
+  "afc_power_mode": "string"
 }
 
 

@@ -8,11 +8,13 @@ url = f"{baseUrl}/users/external/{uid}"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 body = {
-  "user_role": "OPERATOR",
+  "user_role": "ADMINISTRATOR",
   "org_id": 0,
   "location_ids": [
     0
-  ]
+  ],
+  "access_scope": 0,
+  "viq_access_control": 0
 }
 
 

@@ -1,8 +1,8 @@
 import requests
          
+folderId = '1248163264'
 baseUrl = 'https://api.extremecloudiq.com'
 access_token = '***'
-folderId = 0
 
 url = f"{baseUrl}/user-folder-preferences/{folderId}"
 headers = {'Authorization': f'Bearer {access_token}'}

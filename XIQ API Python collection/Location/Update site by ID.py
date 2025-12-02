@@ -18,7 +18,9 @@ body = {
     "state": "string",
     "postal_code": "string"
   },
-  "country_code": 0
+  "country_code": 0,
+  "latitude": 0,
+  "longitude": 0
 }
 
 

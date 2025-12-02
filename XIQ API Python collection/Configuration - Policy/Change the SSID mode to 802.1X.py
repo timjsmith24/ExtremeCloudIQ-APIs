@@ -15,7 +15,8 @@ body = {
   "radius_server_group_id": 0,
   "user_group_ids": [
     0
-  ]
+  ],
+  "enable_uztna": True
 }
 
 

@@ -16,7 +16,7 @@ myEndTime = utc_seconds('2024-12-07 02:30:00', 'US/Eastern')
 site_id = 'Site ID'
 access_token = '***'
 
-url = f"{baseUrl}/users/grid_export"
+url = f"{baseUrl}/users/grid-export"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {'startTime': f'{myStartTime}', 'endTime': f'{myEndTime}'}
 body = {
@@ -56,6 +56,7 @@ body = {
 # search: string (disabled)
 # sortField: SESSION_DURATION (disabled)
 # order: ASC (disabled)
+# timezoneOffset: None (disabled)
 
 response = requests.post(url, headers=headers, params=params)
 

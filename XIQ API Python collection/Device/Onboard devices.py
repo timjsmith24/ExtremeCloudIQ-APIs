@@ -35,6 +35,22 @@ body = {
       "additionalProp2": "string",
       "additionalProp3": "string"
     }
+  },
+  "dt": {
+    "dts": [
+      {
+        "make": "SWITCH_ENGINE",
+        "model": "DT_5320_16P_4XE",
+        "os_type": "string",
+        "os_version": "string",
+        "vim_modules": [
+          "DT_5520_VIM_4X"
+        ],
+        "feat_licenses": [
+          "PRD_5000_PRMR"
+        ]
+      }
+    ]
   }
 }
 

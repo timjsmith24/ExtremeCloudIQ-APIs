@@ -7,27 +7,74 @@ url = f"{baseUrl}/packetcaptures"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 body = {
-  "duration" : 300,
-  "capture_id_type" : "DEVICE_IDS",
-  "device_ids" : [ 123000, 123005 ],
-  "destination" : "CLOUD",
-  "filter" : {
-    "mac_addr" : [ "AABBCC001122" ],
-    "ip_addr" : [ "192.168.11.255" ],
-    "protocol" : "USER_DEFINED",
-    "protocol_number" : 5,
-    "port" : 1024,
-    "vlan" : "2,3-5",
-    "wlan" : "some-ssid"
+  "id": 0,
+  "start_time": "2025-11-13T14:55:34.289Z",
+  "end_time": "2025-11-13T14:55:34.289Z",
+  "org_id": 0,
+  "name": "string",
+  "duration": 604800,
+  "capture_id_type": "AP_SERIAL_NUMBER",
+  "ap_serial_number": "string",
+  "device_ids": [
+    0
+  ],
+  "location_id": 0,
+  "destination": "CLOUD",
+  "filter": {
+    "mac_addr": [
+      "string"
+    ],
+    "ip_addr": [
+      "string"
+    ],
+    "protocol": "ANY",
+    "protocol_number": 255,
+    "port": 0,
+    "vlan": "string",
+    "wlan": "string"
   },
-  "capture_if" : {
-    "direction" : "BOTH",
-    "radio" : "ALL",
-    "wired_interface" : "ETH0",
-    "wireless_band" : "2.4GHZ",
-    "wired_filters" : [ "DHCP" ],
-    "wireless_filters" : [ "DATA", "CONTROL" ]
-  }
+  "capture_if": {
+    "direction": "BOTH",
+    "radio": "ALL",
+    "wired_interface": "ALL",
+    "wireless_band": "ALL",
+    "wired_filters": [
+      "DHCP"
+    ],
+    "wireless_filters": [
+      "MANAGEMENT"
+    ]
+  },
+  "status": "INITIAL",
+  "results": [
+    {
+      "id": 0,
+      "org_id": 0,
+      "start_time": "2025-11-13T14:55:34.289Z",
+      "end_time": "2025-11-13T14:55:34.289Z",
+      "device_id": 0,
+      "hostname": "string",
+      "mac_address": "string",
+      "interface_name": "string",
+      "location_id": 0,
+      "locations": [
+        {
+          "id": 0,
+          "name": "string"
+        }
+      ],
+      "status": "INITIAL",
+      "error_message": "string",
+      "storage": {
+        "cloud_storage": "string",
+        "cloud_shark_storage": {
+          "file_name": "string",
+          "file_url": "string"
+        }
+      }
+    }
+  ],
+  "cloud_storage": "string"
 }
 
 

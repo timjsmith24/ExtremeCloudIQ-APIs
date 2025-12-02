@@ -13,7 +13,7 @@ body = {
       device_id
     ]
   },
-  "country_code": "AFGHANISTAN_4"
+  "country_code": "4"
 }
 
 
