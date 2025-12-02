@@ -14,13 +14,15 @@ body = {
   "employee_group_type": "ADMIN",
   "employee_groups": [
     {
-      "name": "string"
+      "name": "string",
+      "id": 0
     }
   ],
   "restrict_number": 0,
   "user_group_ids": [
     0
-  ]
+  ],
+  "credential_distribution_group_error_message": "string"
 }
 
 

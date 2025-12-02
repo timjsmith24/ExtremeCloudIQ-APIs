@@ -1,16 +1,13 @@
 import requests
          
+airrmId = '123'
 baseUrl = 'https://api.extremecloudiq.com'
 access_token = '***'
 
-url = f"{baseUrl}/locations/wall/type"
+url = f"{baseUrl}/airrm/site/{airrmId}"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
-body = {
-  "name": "string",
-  "attenuation": 999,
-  "color": "#eEB08F"
-}
+
 
 
 response = requests.get(url, headers=headers, params=params)

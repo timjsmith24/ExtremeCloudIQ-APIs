@@ -16,7 +16,7 @@ myEndTime = utc_seconds('2024-12-07 02:30:00', 'US/Eastern')
 site_id = 'Site ID'
 access_token = '***'
 
-url = f"{baseUrl}/users/data_usage"
+url = f"{baseUrl}/users/data-usage"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {'startTime': f'{myStartTime}', 'endTime': f'{myEndTime}'}
 body = {

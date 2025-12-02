@@ -10,6 +10,9 @@ params = {}
 body = {
   "device_ids": [
     device_id
+  ],
+  "product_types": [
+    "string"
   ]
 }
 # async: False (disabled)

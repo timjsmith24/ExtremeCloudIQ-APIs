@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "a8f2f2e8-6a00-45c2-b81b-7df3d8626e5e",
-		"name": "XIQ APIv2 25r5",
+		"name": "XIQ APIv2 25r6",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "4056946",
 		"_collection_link": "https://gold-escape-604608.postman.co/workspace/XIQ-Workflows---Github~7c6c76b6-b57f-4ebb-8d87-9786462c68e3/collection/4056946-a8f2f2e8-6a00-45c2-b81b-7df3d8626e5e?action=share&source=collection_link&creator=4056946"
@@ -33,7 +33,8 @@
 									"pm.environment.set(\"jwttoken\", jsonData['access_token']);"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -43,7 +44,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -980,7 +982,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -990,7 +993,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -1009,7 +1013,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"enable_copilot\": true,\n  \"enable_ssh\": true,\n  \"enable_supplemental_cli\": true,\n  \"enable_wireless_onboarding\": true,\n  \"enable_password_for_exos_voss\": true\n}",
+							"raw": "{\n  \"enable_copilot\": true,\n  \"enable_ssh\": true,\n  \"enable_supplemental_cli\": true,\n  \"enable_wireless_onboarding\": true,\n  \"enable_password_for_exos_voss\": true,\n  \"enable_auto_config_push\": true,\n  \"enable_site_isolation\": true\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2065,7 +2069,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -2085,7 +2090,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -2104,7 +2110,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login_name\": \"example1@company.com\",\n  \"display_name\": \"example1\",\n  \"idle_timeout\": 30,\n  \"user_role\": \"ADMINISTRATOR\",\n  \"location_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"login_name\": \"string\",\n  \"display_name\": \"string\",\n  \"idle_timeout\": 0,\n  \"user_role\": \"ADMINISTRATOR\",\n  \"location_ids\": [\n    0\n  ],\n  \"access_scope\": 0,\n  \"viq_access_control\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2247,7 +2253,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -2267,7 +2274,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -2286,7 +2294,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login_name\": \"newlogin1@company.com\",\n  \"display_name\": \"New Name1\",\n  \"idle_timeout\": \"30\",\n  \"user_role\": \"OBSERVER\",\n  \"location_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"login_name\": \"string\",\n  \"display_name\": \"string\",\n  \"idle_timeout\": 0,\n  \"user_role\": \"ADMINISTRATOR\",\n  \"location_ids\": [\n    0\n  ],\n  \"access_scope\": 0,\n  \"viq_access_control\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2326,7 +2334,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -2339,7 +2348,8 @@
 									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -2376,13 +2386,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/users/data_usage?startTime={{myStartTime}}&endTime={{myEndTime}}",
+							"raw": "{{baseUrl}}/users/data-usage?startTime={{myStartTime}}&endTime={{myEndTime}}",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"users",
-								"data_usage"
+								"data-usage"
 							],
 							"query": [
 								{
@@ -2481,7 +2491,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -2501,7 +2512,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -2520,7 +2532,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login_name\": \"example1@company.com\",\n  \"user_role\": \"ADMINISTRATOR\",\n  \"org_id\":0,\n  \"location_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"login_name\": \"string\",\n  \"user_role\": \"ADMINISTRATOR\",\n  \"org_id\": 0,\n  \"location_ids\": [\n    0\n  ],\n  \"access_scope\": 0,\n  \"viq_access_control\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2666,7 +2678,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -2682,7 +2695,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -2701,7 +2715,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"user_role\": \"OPERATOR\",\n  \"org_id\": 0,\n  \"location_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"user_role\": \"ADMINISTRATOR\",\n  \"org_id\": 0,\n  \"location_ids\": [\n    0\n  ],\n  \"access_scope\": 0,\n  \"viq_access_control\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2742,7 +2756,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -2755,7 +2770,8 @@
 									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -2792,13 +2808,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/users/filter_metadata?startTime={{myStartTime}}&endTime={{myEndTime}}",
+							"raw": "{{baseUrl}}/users/filter-metadata?startTime={{myStartTime}}&endTime={{myEndTime}}",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"users",
-								"filter_metadata"
+								"filter-metadata"
 							],
 							"query": [
 								{
@@ -2958,7 +2974,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -2971,7 +2988,8 @@
 									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -3008,13 +3026,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/users/grid_export?startTime={{myStartTime}}&endTime={{myEndTime}}",
+							"raw": "{{baseUrl}}/users/grid-export?startTime={{myStartTime}}&endTime={{myEndTime}}",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"users",
-								"grid_export"
+								"grid-export"
 							],
 							"query": [
 								{
@@ -3042,6 +3060,12 @@
 									"key": "endTime",
 									"value": "{{myEndTime}}",
 									"description": "(Required) "
+								},
+								{
+									"key": "timezoneOffset",
+									"value": null,
+									"description": "timezone offset",
+									"disabled": true
 								}
 							]
 						},
@@ -3178,8 +3202,26 @@
 					"response": []
 				},
 				{
-					"name": "Get user type distribution",
+					"name": "Get User Type Distribution",
 					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//enter start and end times",
+									"var startTime = new Date(\"Nov 1, 2025 02:30:00\"); // Your timezone!",
+									"var endTime = new Date(\"Nov 10, 2025 12:30:00\"); // Your timezone!",
+									"",
+									"//Set in Environment",
+									"pm.environment.set(\"myStartTime\", startTime.getTime()); // myStartTime is used in Params of call - This is EPOCH time in milliseconds",
+									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
 						{
 							"listen": "test",
 							"script": {
@@ -3188,29 +3230,13 @@
 									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
 									"});",
 									"",
-									"pm.test(\"Body includes data\", function () {",
-									"    pm.expect(pm.response.text()).to.include(\"site_ids\");",
-									"    console.log(pm.test)",
-									"});",
 									" pm.test(\"Response time is less than 1000ms\", function () {",
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"exec": [
-									"var startTime = new Date(\"August 19, 2025 02:30:00\"); // Your timezone!",
-									"var endTime = new Date(\"September 18, 2025 12:30:00\"); // Your timezone!",
-									"pm.environment.set(\"myStartTime\", startTime.getTime()); // myStartTime is used in Params of call - This is EPOCH time in milliseconds",
-									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
-								],
-								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -3228,10 +3254,6 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
 								"key": "Accept",
 								"value": "application/json"
 							}
@@ -3241,34 +3263,31 @@
 							"raw": "{\n  \"site_ids\": [\n    {{site_id}}\n  ]\n}",
 							"options": {
 								"raw": {
-									"headerFamily": "json",
 									"language": "json"
 								}
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/users/type_distribution?startTime={{myStartTime}}&endTime={{myEndTime}}",
+							"raw": "{{baseUrl}}/users/type-distribution?startTime={{myStartTime}}&endTime={{myEndTime}}",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"users",
-								"type_distribution"
+								"type-distribution"
 							],
 							"query": [
 								{
 									"key": "startTime",
-									"value": "{{myStartTime}}",
-									"description": "(Required) "
+									"value": "{{myStartTime}}"
 								},
 								{
 									"key": "endTime",
-									"value": "{{myEndTime}}",
-									"description": "(Required) "
+									"value": "{{myEndTime}}"
 								}
 							]
 						},
-						"description": "User type distribution and total connected users"
+						"description": "Download report of Users"
 					},
 					"response": []
 				}
@@ -4476,7 +4495,8 @@
 									"pm.environment.set(\"building_id\", jsonData[\"id\"]);"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -4500,7 +4520,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"parent_id\": \"{{loc_id}}\",\n  \"name\": \"TheBuildingName\",\n  \"address\": {\n    \"address\": \"string\",\n    \"address2\": \"string\",\n    \"city\": \"string\",\n    \"state\": \"string\",\n    \"postal_code\": \"string\"\n  }\n}",
+							"raw": "{\n  \"parent_id\": \"{{loc_id}}\",\n  \"name\": \"TheBuildingName\",\n  \"address\": {\n    \"address\": \"string\",\n    \"address2\": \"string\",\n    \"city\": \"string\",\n    \"state\": \"string\",\n    \"postal_code\": \"string\"\n  },\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4595,7 +4615,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -4619,7 +4640,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"parent_id\": \"{{loc_id}}\",\n  \"name\": \"NewBuildingName\",\n  \"address\": {\n    \"address\": \"string\",\n    \"address2\": \"string\",\n    \"city\": \"string\",\n    \"state\": \"string\",\n    \"postal_code\": \"string\"\n  }\n}\n",
+							"raw": "{\n  \"parent_id\": \"{{loc_id}}\",\n  \"name\": \"NewBuildingName\",\n  \"address\": {\n    \"address\": \"string\",\n    \"address2\": \"string\",\n    \"city\": \"string\",\n    \"state\": \"string\",\n    \"postal_code\": \"string\"\n  },\n  \"latitude\": 0,\n  \"longitude\": 0\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5281,7 +5302,8 @@
 									"pm.environment.set(\"site_id\", jsonData.id);"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -5305,7 +5327,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"parent_id\": {{loc_id}},\n  \"name\": \"Site Name\",\n  \"address\": {\n    \"address\": \"string\",\n    \"address2\": \"string\",\n    \"city\": \"string\",\n    \"state\": \"string\",\n    \"postal_code\": \"string\"\n  },\n  \"country_code\": 840\n}",
+							"raw": "{\n  \"parent_id\": {{loc_id}},\n  \"name\": \"Site Name\",\n  \"address\": {\n    \"address\": \"string\",\n    \"address2\": \"string\",\n    \"city\": \"string\",\n    \"state\": \"string\",\n    \"postal_code\": \"string\"\n  },\n  \"country_code\": 840,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5400,7 +5422,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -5424,7 +5447,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"parent_id\": \"{{loc_id}}\",\n  \"name\": \"NewSiteName\",\n  \"address\": {\n    \"address\": \"string\",\n    \"address2\": \"string\",\n    \"city\": \"string\",\n    \"state\": \"string\",\n    \"postal_code\": \"string\"\n  },\n  \"country_code\": 0\n}",
+							"raw": "{\n  \"parent_id\": \"{{loc_id}}\",\n  \"name\": \"NewSiteName\",\n  \"address\": {\n    \"address\": \"string\",\n    \"address2\": \"string\",\n    \"city\": \"string\",\n    \"state\": \"string\",\n    \"postal_code\": \"string\"\n  },\n  \"country_code\": 0,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5740,10 +5763,15 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -5762,6 +5790,15 @@
 								"value": "application/json"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"string\",\n  \"attenuation\": 999,\n  \"color\": \"#eEB08F\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{baseUrl}}/locations/wall/type",
 							"host": [
@@ -6588,7 +6625,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -6604,7 +6642,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -6623,7 +6662,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"extreme\": {\n    \"sns\": [\n      \"string\"\n    ]\n  },\n  \"exos\": {\n    \"sns\": [\n      \"string\"\n    ]\n  },\n  \"voss\": {\n    \"sns\": [\n      \"string\"\n    ]\n  },\n  \"wing\": {\n    \"sn_to_mac\": {\n      \"additionalProp1\": \"string\",\n      \"additionalProp2\": \"string\",\n      \"additionalProp3\": \"string\"\n    }\n  },\n  \"dell\": {\n    \"sn_to_st\": {\n      \"additionalProp1\": \"string\",\n      \"additionalProp2\": \"string\",\n      \"additionalProp3\": \"string\"\n    }\n  }\n}",
+							"raw": "{\n  \"extreme\": {\n    \"sns\": [\n      \"string\"\n    ]\n  },\n  \"exos\": {\n    \"sns\": [\n      \"string\"\n    ]\n  },\n  \"voss\": {\n    \"sns\": [\n      \"string\"\n    ]\n  },\n  \"wing\": {\n    \"sn_to_mac\": {\n      \"additionalProp1\": \"string\",\n      \"additionalProp2\": \"string\",\n      \"additionalProp3\": \"string\"\n    }\n  },\n  \"dell\": {\n    \"sn_to_st\": {\n      \"additionalProp1\": \"string\",\n      \"additionalProp2\": \"string\",\n      \"additionalProp3\": \"string\"\n    }\n  },\n  \"dt\": {\n    \"dts\": [\n      {\n        \"make\": \"SWITCH_ENGINE\",\n        \"model\": \"DT_5320_16P_4XE\",\n        \"os_type\": \"string\",\n        \"os_version\": \"string\",\n        \"vim_modules\": [\n          \"DT_5520_VIM_4X\"\n        ],\n        \"feat_licenses\": [\n          \"PRD_5000_PRMR\"\n        ]\n      }\n    ]\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -6807,7 +6846,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -6827,7 +6867,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -6842,13 +6883,22 @@
 								}
 							]
 						},
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Accept",
 								"value": "application/json"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"device_ids\": [\n    {{device_id}}\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{baseUrl}}/devices/:ssh-active-sessions",
 							"host": [
@@ -10158,7 +10208,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -10182,7 +10233,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"devices\": {\n    \"ids\": [\n      {{device_id}}\n    ]\n  },\n  \"country_code\": \"AFGHANISTAN_4\"\n}",
+							"raw": "{\n  \"devices\": {\n    \"ids\": [\n      {{device_id}}\n    ]\n  },\n  \"country_code\": \"4\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -10304,7 +10355,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -10328,7 +10380,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"device_ids\": [\n    0\n  ],\n  \"enabled\": true,\n  \"major\": 65535,\n  \"minor\": 65535,\n  \"power\": 127,\n  \"enable_monitoring\": true\n}",
+							"raw": "{\n  \"device_ids\": [\n    0\n  ],\n  \"enabled\": true,\n  \"major\": 65535,\n  \"minor\": 65535,\n  \"power\": 127,\n  \"enable_monitoring\": true,\n  \"enable_ble_scan_ibeacon\": true,\n  \"enable_ble_scan_generic\": true,\n  \"enable_cloud_reporting\": true,\n  \"enable_batch_reporting\": true\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -11348,7 +11400,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -11372,7 +11425,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"site_ids\": [\n    {{site_id}}\n  ],\n  \"sns\": [\n    \"string\"\n  ],\n  \"mac_addresses\": [\n    \"string\"\n  ],\n  \"hostnames\": [\n    \"string\"\n  ],\n  \"default_gateway_ips\": [\n    \"string\"\n  ],\n  \"product_types\": [\n    \"string\"\n  ],\n  \"firmware_versions\": [\n    \"string\"\n  ],\n  \"country_codes\": [\n    0\n  ],\n  \"managed_by\": [\n    \"string\"\n  ]\n}",
+							"raw": "{\n  \"site_ids\": [\n    {{site_id}}\n  ],\n  \"sns\": [\n    \"string\"\n  ],\n  \"mac_addresses\": [\n    \"string\"\n  ],\n  \"hostnames\": [\n    \"string\"\n  ],\n  \"default_gateway_ips\": [\n    \"string\"\n  ],\n  \"product_types\": [\n    \"string\"\n  ],\n  \"firmware_versions\": [\n    \"string\"\n  ],\n  \"country_codes\": [\n    0\n  ],\n  \"managed_by\": [\n    \"string\"\n  ],\n  \"network_policies\": [\n    \"string\"\n  ],\n  \"eth_uplink_speed_filters\": [\n    {\n      \"eth_uplink_speed\": \"ETH0\",\n      \"filter_type\": \"GT\",\n      \"constant_value\": \"VAUTO\",\n      \"data_unit\": \"KBPS\"\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -11486,7 +11539,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -11510,7 +11564,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"site_ids\": [\n    {{site_id}}\n  ],\n  \"sns\": [\n    \"string\"\n  ],\n  \"mac_addresses\": [\n    \"string\"\n  ],\n  \"hostnames\": [\n    \"string\"\n  ],\n  \"default_gateway_ips\": [\n    \"string\"\n  ],\n  \"product_types\": [\n    \"string\"\n  ],\n  \"firmware_versions\": [\n    \"string\"\n  ],\n  \"country_codes\": [\n    0\n  ],\n  \"managed_by\": [\n    \"string\"\n  ]\n}",
+							"raw": "{\n  \"site_ids\": [\n    0\n  ],\n  \"sns\": [\n    \"string\"\n  ],\n  \"mac_addresses\": [\n    \"string\"\n  ],\n  \"hostnames\": [\n    \"string\"\n  ],\n  \"default_gateway_ips\": [\n    \"string\"\n  ],\n  \"product_types\": [\n    \"string\"\n  ],\n  \"firmware_versions\": [\n    \"string\"\n  ],\n  \"country_codes\": [\n    0\n  ],\n  \"managed_by\": [\n    \"string\"\n  ],\n  \"network_policies\": [\n    \"string\"\n  ],\n  \"eth_uplink_speed_filters\": [\n    {\n      \"eth_uplink_speed\": \"ETH0\",\n      \"filter_type\": \"GT\",\n      \"constant_value\": \"VAUTO\",\n      \"data_unit\": \"KBPS\"\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -13485,7 +13539,8 @@
 									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -13505,7 +13560,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -13543,12 +13599,6 @@
 								"{{client_id}}"
 							],
 							"query": [
-								{
-									"key": "clientMac",
-									"value": "{{client_mac}}",
-									"description": "The client MAC address",
-									"disabled": true
-								},
 								{
 									"key": "startTime",
 									"value": "{{myStartTime}}",
@@ -13912,7 +13962,8 @@
 									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -13932,7 +13983,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -13960,7 +14012,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"number_filter\": [\n    {\n      \"column_name\": \"string\",\n      \"filter_type\": \"GT\",\n      \"value\": 0,\n      \"min\": 0,\n      \"max\": 0\n    }\n  ],\n  \"alias\": [\n    \"string\"\n  ],\n  \"auth_methods\": [\n    \"string\"\n  ],\n  \"encryption_methods\": [\n    \"string\"\n  ],\n  \"operating_systems\": [\n    \"string\"\n  ],\n  \"ssids\": [\n    \"string\"\n  ],\n  \"user_profiles\": [\n    \"string\"\n  ],\n  \"frequency\": [\n    \"string\"\n  ],\n  \"category_assignments\": [\n    \"string\"\n  ]\n}",
+							"raw": "{\n  \"number_filter\": [\n    {\n      \"column_name\": \"string\",\n      \"filter_type\": \"GT\",\n      \"value\": 0,\n      \"min\": 0,\n      \"max\": 0\n    }\n  ],\n  \"alias\": [\n    \"string\"\n  ],\n  \"auth_methods\": [\n    \"string\"\n  ],\n  \"encryption_methods\": [\n    \"string\"\n  ],\n  \"operating_systems\": [\n    \"string\"\n  ],\n  \"ssids\": [\n    \"string\"\n  ],\n  \"user_profiles\": [\n    \"string\"\n  ],\n  \"frequency\": [\n    \"string\"\n  ],\n  \"category_assignments\": [\n    \"string\"\n  ],\n  \"client_type\": [\n    \"string\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -13990,7 +14042,7 @@
 								},
 								{
 									"key": "keyword",
-									"value": null,
+									"value": "",
 									"description": "The search string",
 									"disabled": true
 								},
@@ -14017,8 +14069,8 @@
 								},
 								{
 									"key": "sortField",
-									"value": null,
-									"description": "Available values : CONNECTION_STATUS, CLIENT_HOSTNAME, SNR, RSSI, CHANNEL_UTILIZATION_SCORE, ASSOCIATION_ISSUE, AUTHENTICATION_ISSUE, IP_ADDRESS_ISSUE, ROAMING_ISSUE, IPV4, CONNECTED_DEVICE_MAC, SSID, VLAN, LAST_SESSION_START_TIME, OPERATING_SYSTEM, CLIENT_MAC, USERNAME, AUTHENTICATION, USER_NAME, ALIAS, IPV6",
+									"value": "",
+									"description": "Available values : CONNECTION_STATUS, CLIENT_HOSTNAME, SNR, RSSI, CHANNEL_UTILIZATION_SCORE, ASSOCIATION_ISSUE, AUTHENTICATION_ISSUE, IP_ADDRESS_ISSUE, ROAMING_ISSUE, IPV4, CONNECTED_DEVICE_MAC, SSID, VLAN, LAST_SESSION_START_TIME, OPERATING_SYSTEM, CLIENT_MAC, USERNAME, AUTHENTICATION, USER_NAME, ALIAS, IPV6, CLIENT_TYPE",
 									"disabled": true
 								},
 								{
@@ -14563,7 +14615,7 @@
 					"response": []
 				},
 				{
-					"name": "Get Client Grid Filter Metadata",
+					"name": "Get d360 Event Graph",
 					"event": [
 						{
 							"listen": "test",
@@ -14582,7 +14634,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -14595,7 +14648,8 @@
 									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -14646,13 +14700,7 @@
 								{
 									"key": "filter",
 									"value": "INFO",
-									"description": "The Enum for graph filter type",
-									"disabled": true
-								},
-								{
-									"key": "filter",
-									"value": "ACTIVE",
-									"description": "The Enum for graph filter type",
+									"description": "The Enum for graph filter type\n\nAvailable values : CRITICAL, MAJOR, MINOR, INFO, ACTIVE, CLEAR, ALL, WARNING",
 									"disabled": true
 								}
 							]
@@ -15115,15 +15163,16 @@
 							"listen": "prerequest",
 							"script": {
 								"exec": [
-									"var startTime = new Date(\"March 19, 2025 02:30:00\"); // Your timezone!",
-									"var endTime = new Date(\"March 19, 2025 04:30:00\"); // Your timezone!",
+									"var startTime = new Date(\"November 2, 2025 14:30:00\"); // Your timezone!",
+									"var endTime = new Date(\"November 4, 2025 15:30:00\"); // Your timezone!",
 									"",
 									"//Set in Environment",
 									"pm.environment.set(\"myStartTime\", startTime.getTime()); // myStartTime is used in Params of call - This is EPOCH time in milliseconds",
 									"pm.environment.set(\"myEndTime\", endTime.getTime()); // myEndTime is used in Params of call - This is EPOCH time in milliseconds"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -15142,7 +15191,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -16062,7 +16112,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -16081,7 +16132,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -16575,7 +16627,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -16603,7 +16657,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"site_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"site_ids\": [\n    0\n  ],\n  \"device_ids\": [\n    0\n  ]\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -16646,7 +16700,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -16674,7 +16730,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"site_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"site_ids\": [\n    0\n  ],\n  \"device_ids\": [\n    0\n  ]\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -16717,7 +16773,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -16745,7 +16803,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"site_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"site_ids\": [\n    0\n  ],\n  \"device_ids\": [\n    0\n  ]\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -17975,7 +18033,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -17990,7 +18049,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -18336,7 +18396,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -18351,7 +18412,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -18379,7 +18441,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"site_ids\": [\n    {{site_id}}\n  ],\n  \"device_ids\": [\n    {{device_id}}\n  ],\n  \"number_filter\": [\n    {\n      \"column_name\": \"string\",\n      \"filter_type\": \"GT\",\n      \"value\": 0,\n      \"min\": 0,\n      \"max\": 0\n    }\n  ],\n  \"alias\": [\n    \"string\"\n  ],\n  \"auth_methods\": [\n    \"string\"\n  ],\n  \"encryption_methods\": [\n    \"string\"\n  ],\n  \"operating_systems\": [\n    \"string\"\n  ],\n  \"ssids\": [\n    \"string\"\n  ],\n  \"user_profiles\": [\n    \"string\"\n  ],\n  \"frequency\": [\n    \"string\"\n  ],\n  \"category_assignments\": [\n    \"string\"\n  ],\n  \"has_authentication_issues\": true,\n  \"has_association_issues\": true,\n  \"has_ip_address_issues\": true,\n  \"has_roaming_issues\": true,\n  \"is_client_unhealthy\": true\n}",
+							"raw": "{\n  \"site_ids\": [\n    0\n  ],\n  \"device_ids\": [\n    0\n  ],\n  \"number_filter\": [\n    {\n      \"column_name\": \"string\",\n      \"filter_type\": \"GT\",\n      \"value\": 0,\n      \"min\": 0,\n      \"max\": 0\n    }\n  ],\n  \"alias\": [\n    \"string\"\n  ],\n  \"auth_methods\": [\n    \"string\"\n  ],\n  \"encryption_methods\": [\n    \"string\"\n  ],\n  \"operating_systems\": [\n    \"string\"\n  ],\n  \"ssids\": [\n    \"string\"\n  ],\n  \"user_profiles\": [\n    \"string\"\n  ],\n  \"frequency\": [\n    \"string\"\n  ],\n  \"category_assignments\": [\n    \"string\"\n  ],\n  \"has_authentication_issues\": true,\n  \"has_association_issues\": true,\n  \"has_ip_address_issues\": true,\n  \"has_roaming_issues\": true,\n  \"is_client_unhealthy\": true,\n  \"client_type\": [\n    \"string\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -18617,7 +18679,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -18636,7 +18699,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -18664,7 +18728,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"site_ids\": [\n    {{site_id}}\n  ],\n  \"device_ids\": [\n    {{device_id}}\n  ],\n  \"number_filter\": [\n    {\n      \"column_name\": \"string\",\n      \"filter_type\": \"GT\",\n      \"value\": 0,\n      \"min\": 0,\n      \"max\": 0\n    }\n  ],\n  \"alias\": [\n    \"string\"\n  ],\n  \"auth_methods\": [\n    \"string\"\n  ],\n  \"encryption_methods\": [\n    \"string\"\n  ],\n  \"operating_systems\": [\n    \"string\"\n  ],\n  \"ssids\": [\n    \"string\"\n  ],\n  \"user_profiles\": [\n    \"string\"\n  ],\n  \"frequency\": [\n    \"string\"\n  ],\n  \"category_assignments\": [\n    \"string\"\n  ],\n  \"has_authentication_issues\": true,\n  \"has_association_issues\": true,\n  \"has_ip_address_issues\": true,\n  \"has_roaming_issues\": true,\n  \"is_client_unhealthy\": true\n}",
+							"raw": "{\n  \"site_ids\": [\n    0\n  ],\n  \"device_ids\": [\n    0\n  ],\n  \"number_filter\": [\n    {\n      \"column_name\": \"string\",\n      \"filter_type\": \"GT\",\n      \"value\": 0,\n      \"min\": 0,\n      \"max\": 0\n    }\n  ],\n  \"alias\": [\n    \"string\"\n  ],\n  \"auth_methods\": [\n    \"string\"\n  ],\n  \"encryption_methods\": [\n    \"string\"\n  ],\n  \"operating_systems\": [\n    \"string\"\n  ],\n  \"ssids\": [\n    \"string\"\n  ],\n  \"user_profiles\": [\n    \"string\"\n  ],\n  \"frequency\": [\n    \"string\"\n  ],\n  \"category_assignments\": [\n    \"string\"\n  ],\n  \"has_authentication_issues\": true,\n  \"has_association_issues\": true,\n  \"has_ip_address_issues\": true,\n  \"has_roaming_issues\": true,\n  \"is_client_unhealthy\": true,\n  \"client_type\": [\n    \"string\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -24928,7 +24992,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -24952,7 +25017,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"enable_email_approval\": true,\n  \"enable_user_limitation\": true,\n  \"employee_group_type\": \"ADMIN\",\n  \"employee_groups\": [\n    {\n      \"name\": \"string\"\n    }\n  ],\n  \"restrict_number\": 0,\n  \"user_group_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"enable_email_approval\": true,\n  \"enable_user_limitation\": true,\n  \"employee_group_type\": \"ADMIN\",\n  \"employee_groups\": [\n    {\n      \"name\": \"string\",\n      \"id\": 0\n    }\n  ],\n  \"restrict_number\": 0,\n  \"user_group_ids\": [\n    0\n  ],\n  \"credential_distribution_group_error_message\": \"string\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -25232,7 +25297,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -25240,13 +25306,14 @@
 							"script": {
 								"exec": [
 									"//enter epoch times",
-									"var epochTime = new Date(\"Oct 1, 2024 02:30:00\"); // Your timezone!",
+									"var epochTime = new Date(\"Oct 23, 2025 13:10:00\"); // Your timezone!",
 									"",
 									"//Set in Environment",
 									"pm.environment.set(\"myEpoch\", epochTime.getTime()); // myEpoch is used in Params of call - This is EPOCH time in milliseconds"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -25589,7 +25656,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -25599,7 +25667,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -25623,7 +25692,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"device_ids\": [\n    {{device_id}}\n  ]\n}",
+							"raw": "{\n  \"device_ids\": [\n    {{device_id}}\n  ],\n  \"product_types\": [\n    \"string\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -26601,7 +26670,7 @@
 					"response": []
 				},
 				{
-					"name": "Setup a Key-based Private Client Group [LRO]",
+					"name": "Create a Key-based Private Client Group [LRO]",
 					"event": [
 						{
 							"listen": "test",
@@ -26730,7 +26799,7 @@
 					"response": []
 				},
 				{
-					"name": "Create a Key-based Private Client Group for a network policy [LRO]",
+					"name": "Onboard Key-based PCG in a network policy [LRO]",
 					"event": [
 						{
 							"listen": "test",
@@ -26745,7 +26814,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -29326,7 +29396,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -29350,7 +29422,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"app_id\": \"THREAD_GATEWAY\",\n  \"thread_gateway\": {\n    \"short_pan_id\": \"stri\",\n    \"ext_pan_id\": \"stringstringstri\",\n    \"master_key\": \"stringstringstringstringstringst\",\n    \"network_name\": \"string\",\n    \"channel\": 0,\n    \"comm_credentials\": \"string\",\n    \"comm_timeout\": 2000000,\n    \"enable_nat64\": true,\n    \"white_list\": [\n      {\n        \"long_eui\": \"string\",\n        \"pskd\": \"string\"\n      }\n    ]\n  }\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"app_id\": \"THREAD_GATEWAY\",\n  \"thread_gateway\": {\n    \"short_pan_id\": \"7ecD\",\n    \"ext_pan_id\": \"fEf978cd84e60ffF\",\n    \"master_key\": \"B9704A19e8ab939F9EaC55DFbCfd07Cb\",\n    \"network_name\": \"string\",\n    \"channel\": 0,\n    \"comm_credentials\": \"kwiOq1VqD+DtEquZ_yk>pjC<nOz^`H  \\\\inj1vTZeY fN@?e~'AI;KG0@ LA<j4VWCWVg*ce:>)!]]&gl!dHxTB(6A 9xPI@)%8\\\"_>B9zR>ae3\",\n    \"comm_timeout\": 2000000,\n    \"enable_nat64\": true,\n    \"enable_dns_search_domain\": true,\n    \"white_list\": [\n      {\n        \"long_eui\": \"*\",\n        \"pskd\": \"JL53DD9\"\n      }\n    ],\n    \"default_user_profile_id\": 0\n  },\n  \"app_supported\": \"SINGLE\",\n  \"ble_beacon\": {\n    \"applications\": [\n      {\n        \"measured_rss\": 15,\n        \"advertise_interval\": 10240,\n        \"tx_power\": 3,\n        \"major\": 65535,\n        \"minor\": 65535,\n        \"uuid\": \"Fc5bb1BE-6318-496F-b08d-5BF8682DD353\",\n        \"url\": \"string\",\n        \"app_type\": \"IBEACON\"\n      }\n    ]\n  },\n  \"ble_scan\": {\n    \"destination\": {\n      \"interval\": 60,\n      \"http_server\": {\n        \"url\": \"string\",\n        \"interval\": 60,\n        \"enable_deduplication\": true\n      }\n    },\n    \"applications\": [\n      {\n        \"min_rss\": 20,\n        \"uuid\": \"Aa817E2f-6b42-bcC1-8FF4-c542134b012B\",\n        \"vendors\": [\n          {\n            \"vendor_type\": \"ANY\",\n   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -29442,7 +29514,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -29466,7 +29540,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"app_id\": \"THREAD_GATEWAY\",\n  \"thread_gateway\": {\n    \"short_pan_id\": \"stri\",\n    \"ext_pan_id\": \"stringstringstri\",\n    \"master_key\": \"stringstringstringstringstringst\",\n    \"network_name\": \"string\",\n    \"channel\": 0,\n    \"comm_credentials\": \"string\",\n    \"comm_timeout\": 2000000,\n    \"enable_nat64\": true,\n    \"white_list\": [\n      {\n        \"long_eui\": \"string\",\n        \"pskd\": \"string\"\n      }\n    ]\n  }\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"app_id\": \"THREAD_GATEWAY\",\n  \"thread_gateway\": {\n    \"short_pan_id\": \"BdeC\",\n    \"ext_pan_id\": \"891d3b931d50869D\",\n    \"master_key\": \"cE6920E687a2BFdc2AcE6920E687a2BF\",\n    \"network_name\": \"string\",\n    \"channel\": 0,\n    \"comm_credentials\": \"g@4D5ipt>vlo MO:B(;1j&\\\\/Z]O=g4t7~k|@oJyl;Mm0(oF%x~`!,|PDhaSJ3z4gy@xDDS%/F|;L=wFbtQ<O=\\\"iH2\\\"daC<T7=@a`yLJ]gOf&@)q\\\\:R=v2@}0`=J:Nay\\\\@jxN{6{eiA4U=m-Bp{9)KhzPDp~ zPF2` 1A~Z_e-`-W!#TkD!BohcaM;E3?uL>l=\",\n    \"comm_timeout\": 2000000,\n    \"enable_nat64\": true,\n    \"enable_dns_search_domain\": true,\n    \"white_list\": [\n      {\n        \"long_eui\": \"c5a2fE7dD7E9cf9c\",\n        \"pskd\": \"X6EFNAD8HAG7YDG62S7LTD0EJ2C9MJYK\"\n      }\n    ],\n    \"default_user_profile_id\": 0\n  },\n  \"app_supported\": \"SINGLE\",\n  \"ble_beacon\": {\n    \"applications\": [\n      {\n        \"measured_rss\": 15,\n        \"advertise_interval\": 10240,\n        \"tx_power\": 3,\n        \"major\": 65535,\n        \"minor\": 65535,\n        \"uuid\": \"Bc3f38F6-fd76-4086-6C0d-dED65D2FC8F0\",\n        \"url\": \"string\",\n        \"app_type\": \"IBEACON\"\n      }\n    ]\n  },\n  \"ble_scan\": {\n    \"destination\": {\n      \"interval\": 60,\n      \"http_server\": {\n        \"url\": \"string\",\n        \"interval\": 60,\n        \"enable_deduplication\": true\n      }\n    },\n    \"applications\": [\n      {\n        \"min_rss\": 20,\n        \"uuid\": \"472c209C-d1Ec-CD64-d1aF-5FA3B789bf00\",\n        \"vendors\": [\n          {\n            \"vendor_type\": \"ANY\",\n            \"vendor_name\": \"string\",\n            \"company_id\": 65535\n          }\n        ],\n        \"app_type\": \"IBEACON\"\n      }\n    ]\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -31134,7 +31208,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -31158,7 +31234,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"transmission_power\": 20,\n  \"max_transmit_power\": 20,\n  \"transmission_power_floor\": 20,\n  \"transmission_power_max_drop\": 18,\n  \"max_clients\": 255,\n  \"enable_client_transmission_power\": true,\n  \"client_transmission_power\": 20,\n  \"radio_mode\": \"B_G\",\n  \"enable_ofdma\": true\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"transmission_power\": 20,\n  \"max_transmit_power\": 20,\n  \"transmission_power_floor\": 20,\n  \"transmission_power_max_drop\": 18,\n  \"max_clients\": 255,\n  \"enable_client_transmission_power\": true,\n  \"client_transmission_power\": 20,\n  \"radio_mode\": \"B_G\",\n  \"enable_ofdma\": true,\n  \"afc_power_mode\": \"string\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -31250,7 +31326,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -31274,7 +31352,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"transmission_power\": 20,\n  \"max_transmit_power\": 20,\n  \"transmission_power_floor\": 20,\n  \"transmission_power_max_drop\": 18,\n  \"max_clients\": 255,\n  \"enable_client_transmission_power\": true,\n  \"client_transmission_power\": 20,\n  \"radio_mode\": \"B_G\",\n  \"enable_ofdma\": true\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"transmission_power\": 20,\n  \"max_transmit_power\": 20,\n  \"transmission_power_floor\": 20,\n  \"transmission_power_max_drop\": 18,\n  \"max_clients\": 255,\n  \"enable_client_transmission_power\": true,\n  \"client_transmission_power\": 20,\n  \"radio_mode\": \"B_G\",\n  \"enable_ofdma\": true,\n  \"afc_power_mode\": \"string\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -32763,7 +32841,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1500);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -32787,7 +32867,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"key_management\": \"WPA3_8021X\",\n  \"encryption_method\": \"CCMP\",\n  \"enable_idm\": true,\n  \"transition_mode\": true,\n  \"radius_server_group_id\": 0,\n  \"user_group_ids\": [\n    0\n  ]\n}",
+							"raw": "{\n  \"key_management\": \"WPA3_8021X\",\n  \"encryption_method\": \"CCMP\",\n  \"enable_idm\": true,\n  \"transition_mode\": true,\n  \"radius_server_group_id\": 0,\n  \"user_group_ids\": [\n    0\n  ],\n  \"enable_uztna\": true\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -34583,7 +34663,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -34607,7 +34688,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"redundant\": true,\n  \"primary_tc\": 0,\n  \"backup_tc\": 0,\n  \"primary_listening_interface\": 4,\n  \"backup_listening_interface\": 4,\n  \"primary_bridging_interface\": 4,\n  \"backup_bridging_interface\": 4,\n  \"primary_ip\": \"string\",\n  \"backup_ip\": \"string\",\n  \"primary_vlan\": 4094,\n  \"backup_vlan\": 4094,\n  \"primary_tagged\": true,\n  \"backup_tagged\": true,\n  \"tunnel_address\": \"string\",\n  \"router_id\": 0,\n  \"gateway\": \"string\",\n  \"native_vlan\": 4094\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"redundant\": true,\n  \"primary_tc\": 0,\n  \"backup_tc\": 0,\n  \"primary_listening_interface\": 4,\n  \"backup_listening_interface\": 4,\n  \"primary_bridging_interface\": 4,\n  \"backup_bridging_interface\": 4,\n  \"primary_ip\": \"string\",\n  \"backup_ip\": \"string\",\n  \"primary_vlan\": 4094,\n  \"backup_vlan\": 4094,\n  \"primary_tagged\": true,\n  \"backup_tagged\": true,\n  \"tunnel_address\": \"68.0.246.255/20\",\n  \"router_id\": 0,\n  \"gateway\": \"string\",\n  \"native_vlan\": 4094,\n  \"block_non_essential_broadcast\": true,\n  \"arp_proxy\": true,\n  \"multicast_rules\": [\n    {\n      \"ip\": \"string\"\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -34699,7 +34780,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -34723,7 +34806,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"redundant\": true,\n  \"primary_tc\": 0,\n  \"backup_tc\": 0,\n  \"primary_listening_interface\": 4,\n  \"backup_listening_interface\": 4,\n  \"primary_bridging_interface\": 4,\n  \"backup_bridging_interface\": 4,\n  \"primary_ip\": \"string\",\n  \"backup_ip\": \"string\",\n  \"primary_vlan\": 4094,\n  \"backup_vlan\": 4094,\n  \"primary_tagged\": true,\n  \"backup_tagged\": true,\n  \"tunnel_address\": \"string\",\n  \"router_id\": 0,\n  \"gateway\": \"string\",\n  \"native_vlan\": 4094\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"redundant\": true,\n  \"primary_tc\": 0,\n  \"backup_tc\": 0,\n  \"primary_listening_interface\": 4,\n  \"backup_listening_interface\": 4,\n  \"primary_bridging_interface\": 4,\n  \"backup_bridging_interface\": 4,\n  \"primary_ip\": \"string\",\n  \"backup_ip\": \"string\",\n  \"primary_vlan\": 4094,\n  \"backup_vlan\": 4094,\n  \"primary_tagged\": true,\n  \"backup_tagged\": true,\n  \"tunnel_address\": \"252.194.241.253/30\",\n  \"router_id\": 0,\n  \"gateway\": \"string\",\n  \"native_vlan\": 4094,\n  \"block_non_essential_broadcast\": true,\n  \"arp_proxy\": true,\n  \"multicast_rules\": [\n    {\n      \"ip\": \"string\"\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -35962,7 +36045,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -35986,7 +36071,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"shared_secret\": \"string\",\n  \"authentication_port\": 1812,\n  \"accounting_port\": 1813,\n  \"server_type\": \"BOTH\",\n  \"ip_addr\": \"string\",\n  \"enable_a3\": true\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"shared_secret\": \"string\",\n  \"authentication_port\": 1812,\n  \"accounting_port\": 1813,\n  \"server_type\": \"BOTH\",\n  \"ip_addr\": \"string\",\n  \"enable_a3\": true,\n  \"enable_peer_discovery\": true,\n  \"access_type\": \"STANDARD\",\n  \"trust_pilot_id\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -36076,7 +36161,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -36100,7 +36187,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"shared_secret\": \"string\",\n  \"authentication_port\": 1812,\n  \"accounting_port\": 1813,\n  \"server_type\": \"BOTH\",\n  \"ip_addr\": \"string\"\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"shared_secret\": \"string\",\n  \"authentication_port\": 1812,\n  \"accounting_port\": 1813,\n  \"server_type\": \"BOTH\",\n  \"ip_addr\": \"string\",\n  \"enable_peer_discovery\": true,\n  \"trust_pilot_id\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -36257,7 +36344,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -36281,7 +36370,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"authentication_method_group\": \"TLS_PEAP_TTLS_LEAP_MD5\",\n  \"default_authentication_method\": \"TLS\",\n  \"enable_verify_server_cert\": true,\n  \"server_key_password\": \"string\",\n  \"enable_check_cert_common_name\": true,\n  \"enable_check_user_for_tls_auth\": true,\n  \"enable_check_user_for_peap_auth\": true,\n  \"enable_check_user_for_ttls_auth\": true,\n  \"enable_authentication_server\": true,\n  \"enable_radius_accounting_settings\": true,\n  \"authentication_server_port\": 1812,\n  \"active_session_limit\": 0,\n  \"active_session_age_timeout\": 1800,\n  \"external_user_directory\": {\n    \"ldap_retry_interval\": 600,\n    \"local_check_interval\": 300,\n    \"remote_check_interval\": 30,\n    \"enable_radius_server_credential_caching\": true,\n    \"cache_lifetime\": 86400,\n    \"user_group_attribute\": \"memberOf\",\n    \"external_user_directory_type\": \"OPEN_LDAP\",\n    \"entries\": [\n      {\n        \"default_server_id\": 0,\n        \"server_role\": \"PRIMARY\"\n      }\n    ]\n  },\n  \"ca_certificate_id\": 0,\n  \"server_certificate_id\": 0,\n  \"server_key_id\": 0,\n  \"device_ids\": [\n    0\n  ],\n  \"clients\": [\n    {\n      \"id\": 0,\n      \"shared_secret\": \"string\",\n      \"description\": \"string\",\n      \"l3_address_profile_id\": 0\n    }\n  ]\n}\n",
+							"raw": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"authentication_method_group\": \"TLS_PEAP_TTLS_LEAP_MD5\",\n  \"default_authentication_method\": \"TLS\",\n  \"enable_verify_server_cert\": true,\n  \"server_key_password\": \"string\",\n  \"enable_check_cert_common_name\": true,\n  \"enable_check_user_for_tls_auth\": true,\n  \"enable_check_user_for_peap_auth\": true,\n  \"enable_check_user_for_ttls_auth\": true,\n  \"enable_authentication_server\": true,\n  \"enable_radius_accounting_settings\": true,\n  \"authentication_server_port\": 1812,\n  \"active_session_limit\": 0,\n  \"active_session_age_timeout\": 1800,\n  \"external_user_directory\": {\n    \"ldap_retry_interval\": 600,\n    \"local_check_interval\": 300,\n    \"remote_check_interval\": 30,\n    \"enable_radius_server_credential_caching\": true,\n    \"cache_lifetime\": 86400,\n    \"user_group_attribute\": \"memberOf\",\n    \"external_user_directory_type\": \"OPEN_LDAP\",\n    \"entries\": [\n      {\n        \"default_server_id\": 0,\n        \"server_role\": \"PRIMARY\"\n      }\n    ]\n  },\n  \"ca_certificate_id\": 0,\n  \"server_certificate_id\": 0,\n  \"server_key_id\": 0,\n  \"device_ids\": [\n    0\n  ],\n  \"clients\": [\n    {\n      \"id\": 0,\n      \"shared_secret\": \"string\",\n      \"description\": \"string\",\n      \"l3_address_profile_id\": 0\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -36450,7 +36539,9 @@
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -41946,7 +42037,9 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -41968,7 +42061,9 @@
 									"var jsonData = JSON.parse(responseBody);   ",
 									"pm.environment.set(\"pcap_id\", jsonData[\"id\"]);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -41996,7 +42091,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"duration\" : 300,\n  \"capture_id_type\" : \"DEVICE_IDS\",\n  \"device_ids\" : [ 123000, 123005 ],\n  \"destination\" : \"CLOUD\",\n  \"filter\" : {\n    \"mac_addr\" : [ \"AABBCC001122\" ],\n    \"ip_addr\" : [ \"192.168.11.255\" ],\n    \"protocol\" : \"USER_DEFINED\",\n    \"protocol_number\" : 5,\n    \"port\" : 1024,\n    \"vlan\" : \"2,3-5\",\n    \"wlan\" : \"some-ssid\"\n  },\n  \"capture_if\" : {\n    \"direction\" : \"BOTH\",\n    \"radio\" : \"ALL\",\n    \"wired_interface\" : \"ETH0\",\n    \"wireless_band\" : \"2.4GHZ\",\n    \"wired_filters\" : [ \"DHCP\" ],\n    \"wireless_filters\" : [ \"DATA\", \"CONTROL\" ]\n  }\n}",
+							"raw": "{\n  \"id\": 0,\n  \"start_time\": \"2025-11-13T14:55:34.289Z\",\n  \"end_time\": \"2025-11-13T14:55:34.289Z\",\n  \"org_id\": 0,\n  \"name\": \"string\",\n  \"duration\": 604800,\n  \"capture_id_type\": \"AP_SERIAL_NUMBER\",\n  \"ap_serial_number\": \"string\",\n  \"device_ids\": [\n    0\n  ],\n  \"location_id\": 0,\n  \"destination\": \"CLOUD\",\n  \"filter\": {\n    \"mac_addr\": [\n      \"string\"\n    ],\n    \"ip_addr\": [\n      \"string\"\n    ],\n    \"protocol\": \"ANY\",\n    \"protocol_number\": 255,\n    \"port\": 0,\n    \"vlan\": \"string\",\n    \"wlan\": \"string\"\n  },\n  \"capture_if\": {\n    \"direction\": \"BOTH\",\n    \"radio\": \"ALL\",\n    \"wired_interface\": \"ALL\",\n    \"wireless_band\": \"ALL\",\n    \"wired_filters\": [\n      \"DHCP\"\n    ],\n    \"wireless_filters\": [\n      \"MANAGEMENT\"\n    ]\n  },\n  \"status\": \"INITIAL\",\n  \"results\": [\n    {\n      \"id\": 0,\n      \"org_id\": 0,\n      \"start_time\": \"2025-11-13T14:55:34.289Z\",\n      \"end_time\": \"2025-11-13T14:55:34.289Z\",\n      \"device_id\": 0,\n      \"hostname\": \"string\",\n      \"mac_address\": \"string\",\n      \"interface_name\": \"string\",\n      \"location_id\": 0,\n      \"locations\": [\n        {\n          \"id\": 0,\n          \"name\": \"string\"\n        }\n      ],\n      \"status\": \"INITIAL\",\n      \"error_message\": \"string\",\n      \"storage\": {\n        \"cloud_storage\": \"string\",\n        \"cloud_shark_storage\": {\n          \"file_name\": \"string\",\n          \"file_url\": \"string\"\n        }\n      }\n    }\n  ],\n  \"cloud_storage\": \"string\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -44818,6 +44913,200 @@
 					"response": []
 				},
 				{
+					"name": "[LRO] RM AFC Device export",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Body includes data \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"id\");",
+									"    console.log(pm.test)",
+									"});",
+									"",
+									" pm.test(\"Response time is less than 1000ms\", function () {",
+									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwttoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"site_ids\": [\n    4243,\n    2930\n  ],\n  \"sns\": [\n    \"string\",\n    \"string\"\n  ],\n  \"mac_addresses\": [\n    \"string\",\n    \"string\"\n  ],\n  \"hostnames\": [\n    \"string\",\n    \"string\"\n  ],\n  \"power_mode\": [\n    \"string\",\n    \"string\"\n  ],\n  \"product_types\": [\n    \"string\",\n    \"string\"\n  ],\n  \"wifi_radio\": [\n    \"string\",\n    \"string\"\n  ],\n  \"geo_location\": [\n    \"string\",\n    \"string\"\n  ],\n  \"afc_status\": [\n    \"string\",\n    \"string\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/afc/export?page=1&limit=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"afc",
+								"export"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Page number, min = 1"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"description": "Page Size, min = 1, max = 100"
+								},
+								{
+									"key": "keyword",
+									"value": "string",
+									"description": "The keyword to search",
+									"disabled": true
+								},
+								{
+									"key": "sortField",
+									"value": "HOSTNAME",
+									"description": "The sort field",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "ASC",
+									"description": "The sort order (ascending by default)",
+									"disabled": true
+								},
+								{
+									"key": "timezoneOffset",
+									"value": "19",
+									"description": "timezone offset",
+									"disabled": true
+								},
+								{
+									"key": "includeUnassigned",
+									"value": "false",
+									"description": "Whether to include unassigned devices",
+									"disabled": true
+								}
+							]
+						},
+						"description": "AFC Device List export."
+					},
+					"response": []
+				},
+				{
+					"name": "RM AFC Device Metadata Page",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Body includes data \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"product_type\");",
+									"    console.log(pm.test)",
+									"});",
+									"",
+									" pm.test(\"Response time is less than 1000ms\", function () {",
+									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwttoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"site_ids\": [\n    8234,\n    5054\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/afc/filter-metadata",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"afc",
+								"filter-metadata"
+							],
+							"query": [
+								{
+									"key": "includeUnassigned",
+									"value": "false",
+									"description": "Whether to include unassigned devices",
+									"disabled": true
+								}
+							]
+						},
+						"description": "AFC Device metadata api."
+					},
+					"response": []
+				},
+				{
 					"name": "List of AP candidates that may be used as anchors",
 					"event": [
 						{
@@ -44929,6 +45218,175 @@
 								"{{device_id}}"
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download the  report",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									" pm.test(\"Response time is less than 1000ms\", function () {",
+									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwttoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/afc/reports/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"afc",
+								"reports",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "string",
+									"description": "The report ID"
+								}
+							]
+						},
+						"description": "Download report of Metrics"
+					},
+					"response": []
+				},
+				{
+					"name": "[LRO] RM AFC Device Page",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Body includes data \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"data\");",
+									"    console.log(pm.test)",
+									"});",
+									"",
+									" pm.test(\"Response time is less than 1000ms\", function () {",
+									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwttoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"site_ids\": [\n    4243,\n    2930\n  ],\n  \"sns\": [\n    \"string\",\n    \"string\"\n  ],\n  \"mac_addresses\": [\n    \"string\",\n    \"string\"\n  ],\n  \"hostnames\": [\n    \"string\",\n    \"string\"\n  ],\n  \"power_mode\": [\n    \"string\",\n    \"string\"\n  ],\n  \"product_types\": [\n    \"string\",\n    \"string\"\n  ],\n  \"wifi_radio\": [\n    \"string\",\n    \"string\"\n  ],\n  \"geo_location\": [\n    \"string\",\n    \"string\"\n  ],\n  \"afc_status\": [\n    \"string\",\n    \"string\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/afc/rm-devices-page?page=1&limit=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"afc",
+								"rm-devices-page"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Page number, min = 1"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"description": "Page Size, min = 1, max = 100"
+								},
+								{
+									"key": "keyword",
+									"value": "string",
+									"description": "The keyword to search",
+									"disabled": true
+								},
+								{
+									"key": "sortField",
+									"value": "HOSTNAME",
+									"description": "The sort field",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "ASC",
+									"description": "The sort order (ascending by default)",
+									"disabled": true
+								},
+								{
+									"key": "includeUnassigned",
+									"value": "false",
+									"description": "Whether to include unassigned devices",
+									"disabled": true
+								}
+							]
+						},
+						"description": "AFC Device List with pagination."
 					},
 					"response": []
 				},
@@ -45980,7 +46438,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -45996,7 +46455,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -46024,7 +46484,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"ownerId\": 0,\n  \"folderId\": 0,\n  \"siteTimeZone\": \"string\",\n  \"siteSchedule\": 0\n}",
+							"raw": "{\n  \"ownerId\": 0,\n  \"folderId\": 0,\n  \"siteTimeZone\": \"string\",\n  \"siteSchedule\": 0,\n  \"isDefaultSchedule\": true,\n  \"default_schedule\": true\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -46056,7 +46516,8 @@
 									""
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						},
 						{
@@ -46072,7 +46533,8 @@
 									"    });"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -46100,7 +46562,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"ownerId\": 0,\n  \"folderId\": 0,\n  \"siteTimeZone\": \"string\",\n  \"siteSchedule\": 0\n}",
+							"raw": "{\n  \"ownerId\": 0,\n  \"folderId\": 0,\n  \"siteTimeZone\": \"string\",\n  \"siteSchedule\": 0,\n  \"isDefaultSchedule\": true,\n  \"default_schedule\": true\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -46365,6 +46827,277 @@
 							]
 						},
 						"description": "Upload the capture files from a packet capture session, if files previously failed to be uploaded to XIQ cloud."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "airrm-endpoint",
+			"item": [
+				{
+					"name": "Get Devices Radio Information",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Body includes data \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"device_radio_info\");",
+									"    console.log(pm.test)",
+									"});",
+									"",
+									" pm.test(\"Response time is less than 1000ms\", function () {",
+									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwttoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"serial_number\": \"{{sn}}\",\n  \"airrm_id\": 4985\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/airrm/ap/radioInfo/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"airrm",
+								"ap",
+								"radioInfo",
+								""
+							]
+						},
+						"description": "Get radio information for devices by serial number or AIRRM ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Device Regulatory Config and AFC Spectrum",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Body includes data \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"ap_mode\");",
+									"    console.log(pm.test)",
+									"});",
+									"",
+									" pm.test(\"Response time is less than 1000ms\", function () {",
+									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwttoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/airrm/device/{{sn}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"airrm",
+								"device",
+								"{{sn}}"
+							]
+						},
+						"description": "Get AFC spectrum and regulatory configuration for a specific device"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Device AP Information",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Body includes data \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"device_radio_info\");",
+									"    console.log(pm.test)",
+									"});",
+									"",
+									" pm.test(\"Response time is less than 1000ms\", function () {",
+									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwttoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/airrm/radio/apInfo/:radioMac",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"airrm",
+								"radio",
+								"apInfo",
+								":radioMac"
+							],
+							"variable": [
+								{
+									"key": "radioMac",
+									"value": "00:11:22:33:44:55",
+									"description": "The radio MAC address"
+								}
+							]
+						},
+						"description": "Get device AP information by radio MAC address"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Site Device Regulatory Config and AFC Spectrum",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful GET request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									"",
+									"pm.test(\"Body includes data \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"responses\");",
+									"    console.log(pm.test)",
+									"});",
+									"",
+									" pm.test(\"Response time is less than 1000ms\", function () {",
+									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwttoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/airrm/site/:airrmId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"airrm",
+								"site",
+								":airrmId"
+							],
+							"variable": [
+								{
+									"key": "airrmId",
+									"value": "123",
+									"description": "The AIRRM site ID"
+								}
+							]
+						},
+						"description": "Get AFC spectrum regulatory configuration for all devices in a site"
 					},
 					"response": []
 				}

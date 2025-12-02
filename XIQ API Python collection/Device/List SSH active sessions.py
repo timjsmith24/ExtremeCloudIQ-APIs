@@ -1,15 +1,20 @@
 import requests
          
 baseUrl = 'https://api.extremecloudiq.com'
+device_id = 'device ID'
 access_token = '***'
 
 url = f"{baseUrl}/devices/:ssh-active-sessions"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
+body = {
+  "device_ids": [
+    device_id
+  ]
+}
 
 
-
-response = requests.get(url, headers=headers, params=params)
+response = requests.post(url, headers=headers, params=params)
 
 print("Status Code:", response.status_code)
 

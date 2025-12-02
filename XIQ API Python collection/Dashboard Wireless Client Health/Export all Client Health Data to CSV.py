@@ -1,8 +1,6 @@
 import requests
          
 baseUrl = 'https://api.extremecloudiq.com'
-site_id = 'Site ID'
-device_id = 'device ID'
 access_token = '***'
 
 url = f"{baseUrl}/dashboard/wireless/client-health/export"
@@ -10,10 +8,10 @@ headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 body = {
   "site_ids": [
-    site_id
+    0
   ],
   "device_ids": [
-    device_id
+    0
   ],
   "number_filter": [
     {
@@ -52,7 +50,10 @@ body = {
   "has_association_issues": True,
   "has_ip_address_issues": True,
   "has_roaming_issues": True,
-  "is_client_unhealthy": True
+  "is_client_unhealthy": True,
+  "client_type": [
+    "string"
+  ]
 }
 # keyword:  (disabled)
 # connectionStatus: CONNECTED (disabled)

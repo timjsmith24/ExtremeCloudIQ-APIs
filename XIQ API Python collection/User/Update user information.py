@@ -8,13 +8,15 @@ url = f"{baseUrl}/users/{uid}"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 body = {
-  "login_name": "newlogin1@company.com",
-  "display_name": "New Name1",
-  "idle_timeout": "30",
-  "user_role": "OBSERVER",
+  "login_name": "string",
+  "display_name": "string",
+  "idle_timeout": 0,
+  "user_role": "ADMINISTRATOR",
   "location_ids": [
     0
-  ]
+  ],
+  "access_scope": 0,
+  "viq_access_control": 0
 }
 
 

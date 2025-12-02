@@ -54,7 +54,6 @@ body = {
 }
 
 
-
 response = requests.post(url, headers=headers, params=params)
 
 print("Status Code:", response.status_code)

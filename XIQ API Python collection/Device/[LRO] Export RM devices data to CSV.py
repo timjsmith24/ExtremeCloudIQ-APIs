@@ -1,7 +1,6 @@
 import requests
          
 baseUrl = 'https://api.extremecloudiq.com'
-site_id = 'Site ID'
 access_token = '***'
 
 url = f"{baseUrl}/devices/rm-devices-page/export"
@@ -9,7 +8,7 @@ headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 body = {
   "site_ids": [
-    site_id
+    0
   ],
   "sns": [
     "string"
@@ -34,6 +33,17 @@ body = {
   ],
   "managed_by": [
     "string"
+  ],
+  "network_policies": [
+    "string"
+  ],
+  "eth_uplink_speed_filters": [
+    {
+      "eth_uplink_speed": "ETH0",
+      "filter_type": "GT",
+      "constant_value": "VAUTO",
+      "data_unit": "KBPS"
+    }
   ]
 }
 # keyword:  (disabled)

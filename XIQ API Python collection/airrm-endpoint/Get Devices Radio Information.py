@@ -1,19 +1,19 @@
 import requests
          
 baseUrl = 'https://api.extremecloudiq.com'
+sn = 'Serial Number'
 access_token = '***'
 
-url = f"{baseUrl}/locations/wall/type"
+url = f"{baseUrl}/airrm/ap/radioInfo/"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 body = {
-  "name": "string",
-  "attenuation": 999,
-  "color": "#eEB08F"
+  "serial_number": sn,
+  "airrm_id": 4985
 }
 
 
-response = requests.get(url, headers=headers, params=params)
+response = requests.post(url, headers=headers, params=params)
 
 print("Status Code:", response.status_code)
 

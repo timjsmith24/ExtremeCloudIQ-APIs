@@ -10,7 +10,9 @@ body = {
   "ownerId": 0,
   "folderId": 0,
   "siteTimeZone": "string",
-  "siteSchedule": 0
+  "siteSchedule": 0,
+  "isDefaultSchedule": True,
+  "default_schedule": True
 }
 
 

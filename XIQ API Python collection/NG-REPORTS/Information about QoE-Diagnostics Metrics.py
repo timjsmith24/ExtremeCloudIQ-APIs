@@ -1,9 +1,10 @@
 import requests
          
+metrics = 'WIRELESS_CLIENTS_BY_OS'
 baseUrl = 'https://api.extremecloudiq.com'
 access_token = '***'
 
-url = f"{baseUrl}/ng-reports/information/:metrics"
+url = f"{baseUrl}/ng-reports/information/{metrics}"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 

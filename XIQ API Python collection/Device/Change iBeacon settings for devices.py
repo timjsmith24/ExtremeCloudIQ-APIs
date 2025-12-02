@@ -14,7 +14,11 @@ body = {
   "major": 65535,
   "minor": 65535,
   "power": 127,
-  "enable_monitoring": True
+  "enable_monitoring": True,
+  "enable_ble_scan_ibeacon": True,
+  "enable_ble_scan_generic": True,
+  "enable_cloud_reporting": True,
+  "enable_batch_reporting": True
 }
 
 

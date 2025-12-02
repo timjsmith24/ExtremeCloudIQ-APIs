@@ -12,7 +12,9 @@ body = {
   "enable_ssh": True,
   "enable_supplemental_cli": True,
   "enable_wireless_onboarding": True,
-  "enable_password_for_exos_voss": True
+  "enable_password_for_exos_voss": True,
+  "enable_auto_config_push": True,
+  "enable_site_isolation": True
 }
 
 

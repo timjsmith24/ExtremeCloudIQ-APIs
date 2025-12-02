@@ -21,7 +21,6 @@ headers = {'Authorization': f'Bearer {access_token}'}
 params = {'deviceId': f'{device_id}', 'startTime': f'{myStartTime}', 'endTime': f'{myEndTime}'}
 
 # filter: INFO (disabled)
-# filter: ACTIVE (disabled)
 
 response = requests.get(url, headers=headers, params=params)
 

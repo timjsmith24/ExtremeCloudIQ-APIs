@@ -7,13 +7,15 @@ url = f"{baseUrl}/users"
 headers = {'Authorization': f'Bearer {access_token}'}
 params = {}
 body = {
-  "login_name": "example1@company.com",
-  "display_name": "example1",
-  "idle_timeout": 30,
+  "login_name": "string",
+  "display_name": "string",
+  "idle_timeout": 0,
   "user_role": "ADMINISTRATOR",
   "location_ids": [
     0
-  ]
+  ],
+  "access_scope": 0,
+  "viq_access_control": 0
 }
 
 

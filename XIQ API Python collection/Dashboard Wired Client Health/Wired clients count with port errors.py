@@ -9,6 +9,9 @@ params = {}
 body = {
   "site_ids": [
     0
+  ],
+  "device_ids": [
+    0
   ]
 }
 

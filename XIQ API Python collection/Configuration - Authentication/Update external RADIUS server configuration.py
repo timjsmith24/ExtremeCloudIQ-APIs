@@ -13,7 +13,9 @@ body = {
   "authentication_port": 1812,
   "accounting_port": 1813,
   "server_type": "BOTH",
-  "ip_addr": "string"
+  "ip_addr": "string",
+  "enable_peer_discovery": True,
+  "trust_pilot_id": 0
 }
 
 

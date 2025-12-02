@@ -13,7 +13,10 @@ body = {
   "accounting_port": 1813,
   "server_type": "BOTH",
   "ip_addr": "string",
-  "enable_a3": True
+  "enable_a3": True,
+  "enable_peer_discovery": True,
+  "access_type": "STANDARD",
+  "trust_pilot_id": 0
 }
 
 
